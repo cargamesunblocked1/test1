@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Zontal Arcade</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container-zon header-content">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Zontal Arcade Logo" width="48" height="48">
+                <span>Zontal Arcade</span>
+            </a>
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#">Categories</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger" role="button" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+    <div class="container-zon">
+         <section class="search-section">
+            <div class="search-bar">
+                <form role="search" id="searchForm">
+                    <input type="search" id="searchInput" placeholder="Search games..." aria-label="Search through Zontal games">
+                    <button type="submit">Search</button>
+                </form>
+                <div class="search-results" id="searchResults">
+                    <h2>Search Results</h2>
+                    <div class="masonry-grid" id="searchGrid">
+                        <a href="#" class="game-card">
+                            <img src="game1.png" alt="Game 1 Action" width="150" height="150">
+                            <h3>Game 1</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+          <section class="gameplay-section">
+            <div class="gameplay-area">
+                <div class="iframe-container">
+                    <iframe id="gameIframe" src="https://placehold.co/800x600" title="Game 1 Gameplay" width="800" height="500"></iframe>
+                    <button class="fullscreen-btn" id="fullscreenBtn">Fullscreen</button>
+                </div>
+                <div class="game-info">
+                    <img src="game1.png" alt="Game 1" width="60" height="60">
+                    <h1>Game 1</h1>
+                </div>
+                <h2>Game Description</h2>
+                <p>Experience the thrill of Game 1, an action-packed adventure!</p>
+            </div>
+        </section>
+        <section class="all-games">
+            <h2>All Games</h2>
+            <div class="masonry-grid" id="zon_games">
+                <a href="#" class="game-card" data-featured="true">
+                    <img src="https://images.pexels.com/photos/1632790/pexels-photo-1632790.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Cyber Quest Action" width="300" height="300">
+                    <h3>Cyber Quest</h3>
+                </a>
+                <a href="#" class="game-card" data-popular="true">
+                    <img src="https://images.pexels.com/photos/258092/pexels-photo-258092.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="Puzzle Mania Puzzle" width="200" height="200">
+                    <h3>Puzzle Mania</h3>
+                </a>
+                <a href="#" class="game-card">
+                    <img src="https://images.pexels.com/photos/163077/mario-yoshi-toy-nintendo-163077.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Speed Racer Racing" width="150" height="150">
+                    <h3>Speed Racer</h3>
+                </a>
+                <a href="#" class="game-card">
+                    <img src="https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Adventure Isle Adventure" width="150" height="150">
+                    <h3>Adventure Isle</h3>
+                </a>
+                <a href="#" class="game-card">
+                    <img src="https://images.pexels.com/photos/163089/chess-strategy-board-game-163089.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Strategy Wars Strategy" width="150" height="150">
+                    <h3>Strategy Wars</h3>
+                </a>
+                <a href="#" class="game-card">
+                    <img src="https://images.pexels.com/photos/3943764/pexels-photo-3943764.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Platform Hero Platform" width="150" height="150">
+                    <h3>Platform Hero</h3>
+                </a>
+            </div>
+        </section>
+      
+        <div class="menu-tabs">
+            <h2>Game Categories</h2>
+            <div class="tabs">
+                <a href="#">All</a>
+                <a href="#">Action</a>
+                <a href="#">Shooting</a>
+                <a href="#">Racing</a>
+                <a href="#">Adventure</a>
+                <a href="#">Puzzle</a>
+                <a href="#">Strategy</a>
+                <a href="#">Multiplayer</a>
+                <a href="#">Platform</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 Zontal Arcade Platform. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
